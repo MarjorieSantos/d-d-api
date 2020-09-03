@@ -23,7 +23,7 @@ export default function Home() {
     <div className='home'>
       <Input type='text' Blur={(e) => getItens(e.target.value)}></Input>
       <div className='return-api'>
-        <p>{JSON.stringify(itensApi)}</p>
+        <p>{JSON.stringify(itensApi).replace("{", '\n')}</p>
       </div>
     </div>
   )
