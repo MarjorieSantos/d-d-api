@@ -12,7 +12,7 @@ export default function Menu() {
 
   return (
     <header className='header'>
-      <h1>Marvel - API</h1>
+      <h1>D&D - API</h1>
       <Button classButton='btn-hamburger' handleClick={showMenuOnClick}>
         <FaStream className='icon' />
       </Button>
