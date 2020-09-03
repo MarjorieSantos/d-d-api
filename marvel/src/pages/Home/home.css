@@ -12,7 +12,7 @@
 
 .return-api {
     margin-top: 25px;
-    min-width: 50vw;
+    max-width: 100vw;
     border: 3px solid #0D1A26;
     border-radius: 5px;
     padding: 10px;
