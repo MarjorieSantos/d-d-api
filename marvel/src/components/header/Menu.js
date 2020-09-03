@@ -7,7 +7,7 @@ export default function Menu() {
   const [showMenu, setShowMenu] = useState(false);
 
   const showMenuOnClick = () => {
-    setShowMenu(true)
+    setShowMenu(!false)
   }
 
   return (
