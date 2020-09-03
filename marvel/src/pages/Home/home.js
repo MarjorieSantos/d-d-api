@@ -21,11 +21,8 @@ export default function Home() {
 
   return (
     <div className='home'>
-      <label htmlFor='input'>Digite abaixo o que deseja pesquisar</label>
-      <Input type='text' id='input' Blur={(e) => getItens(e.target.value)}></Input>
-      <div className='return-api'>
-        <p>{JSON.stringify(itensApi)}</p>
-      </div>
+      <Input type='text' Blur={(e) => getItens(e.target.value)}></Input>
+      <p>{JSON.stringify(itensApi)}</p>
     </div>
   )
 }
