@@ -1,4 +1,5 @@
 import React from 'react';
+import './input.css'
 
 export default function Input(props) {
     return (
@@ -7,7 +8,7 @@ export default function Input(props) {
             id={props.id}
             value={props.value}
             onBlur={props.Blur}
-            className={props.classButton}>
+            className='input'>
             {props.children}
         </input>
     )
