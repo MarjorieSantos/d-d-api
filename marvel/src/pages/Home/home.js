@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Input from '../../components/input/input'
 import './home.css'
 
 export default function Home() {
@@ -15,13 +14,20 @@ export default function Home() {
       .then((res) => setItensApi(res))
   }
 
-  useEffect(() => {
-    getItens()
-  }, [])
+  // useEffect(() => {
+  //   getItens()
+  // }, [])
 
   return (
     <div className='home'>
-      <Input type='text' Blur={(e) => getItens(e.target.value)}></Input>
+      <label>Abaixo você poderá pesquisar sobre:</label>
+      <select onChange={(e) => getItens(e.target.value)}>
+        <option value='classes'>classes</option>
+        <option value='subclasses'>subclasses</option>
+        <option value='monsters'>monsters</option>
+        <option value='spells'>spells</option>
+        <option value='features'>features</option>
+      </select>
       <p>{JSON.stringify(itensApi)}</p>
     </div>
   )
