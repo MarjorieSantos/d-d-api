@@ -25,11 +25,15 @@ export default function Home() {
         <option value='spells'>spells</option>
         <option value='features'>features</option>
       </select>
-      {itensApi.results && itensApi.results.map(item => (
-        <div>
-          <p>Name: {item.name}</p>
-        </div>
-      ))}
+      <div className='div-all'>
+        {itensApi.results && itensApi.results.map(item => (
+          <div className='div-result'>
+            <p>Name: {item.name}</p>
+            <p>URL: {item.url}</p>
+            <p>Index: {item.index}</p>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

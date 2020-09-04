@@ -2,7 +2,6 @@
     padding: 25px;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     background: #F29877;
     color: white;
     letter-spacing: 1px;
@@ -27,7 +26,18 @@
     padding: 10px;
     font-size: 18px;
     border-radius: 5px;
-    
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.div-all {
+    height: 100vh;
+    overflow: scroll;
+}
+
+.div-result {
+    padding: 20px;
+    border-top: 1px solid black;
 }
 
 label {
